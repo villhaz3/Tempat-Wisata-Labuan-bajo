@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labuan Bajo</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#welcome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#deskripsi">Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#review">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#message">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="welcome-section" id="welcome">
+    <div class="welcome-text" !important>
+      <h4 class="subjudul">Welcome to</h4>
+      <h1 class="judul">Labuan Bajo</h1>
+      <h6 class="kecil">Komodo, Manggarai Barat</h6>
+    </div>
+  </section>
+  <section class="tentang-section" id="deskripsi">
+    <div class="text-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h2 class="" style="border-bottom: 2px solid #cfdee9;">Description</h2>
+            <p>Labuan Bajo adalah sebuah kota kecil yang terletak di ujung barat Pulau Flores, Indonesia. Dikenal
+              sebagai pintu gerbang menuju Taman Nasional Komodo, Labuan Bajo menawarkan pemandangan alam yang
+              menakjubkan, termasuk pulau-pulau yang indah dan pantai-pantai yang memukau.</p>
+            <p>Kota ini memiliki suasana yang santai, dengan pelabuhan yang ramai dan beragam restoran serta kafe yang
+              menyajikan makanan lokal dan seafood segar.</p>
+            <p>Labuan Bajo juga populer di kalangan penggemar snorkeling dan diving, dengan terumbu karang yang indah
+              dan kehidupan bawah laut yang beragam. Sementara sunset yang memukau di lokasi-lokasi strategis membuatnya
+              menjadi tempat yang sempurna untuk beristirahat dan menikmati keindahan alam.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="image-display">
+              <img src="asset/img/Lokasi.PNG" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card-section" id="gallery">
+    <div class="text-container">
+      <h2 style="text-align: center; border-bottom: 2px solid #cfdee9;">Our Gallery</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="image-storage">
+            <img src="asset/img/kuliner.jpeg" alt="Kelimutu Crater" class="thumbnail" data-title="Kuliner"
+              data-desc="Wisata kuliner di Labuan Bajo menawarkan beragam hidangan laut segar dan masakan lokal yang lezat. Sebagai pelabuhan, Labuan Bajo terkenal dengan seafood-nya, di mana Anda dapat menikmati ikan bakar, cumi-cumi, dan kerang yang baru ditangkap, disajikan dengan bumbu khas yang menggoda.">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="image-storage">
+            <img src="asset/img/sunset.jpeg" alt="Gambar Lain" class="thumbnail" data-title="Sunset"
+              data-desc="Matahari terbenam di Labuan Bajo adalah salah satu momen yang paling menakjubkan dan memikat. Saat matahari perlahan tenggelam di cakrawala, langit akan berubah menjadi palet warna yang spektakuler—nuansa oranye, merah, dan ungu yang berpadu dengan birunya laut.">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="image-storage">
+            <img src="asset/img/snorkling.jpeg" alt="Gambar Ketiga" class="thumbnail" data-title="Snorkeling"
+              data-desc="Snorkeling dan diving di Labuan Bajo menawarkan pengalaman bawah laut yang menakjubkan. Terletak di sekitar Taman Nasional Komodo, kawasan ini dikenal dengan terumbu karang yang kaya dan keanekaragaman hayati yang melimpah.">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="image-storage">
+            <img src="asset/img/pelayaran.jpeg" alt="Gambar Keempat" class="thumbnail" data-title="Pelayaran"
+              data-desc="Pelayaran di Labuan Bajo adalah pengalaman yang menakjubkan, membawa Anda menjelajahi keindahan pulau-pulau yang mengelilinginya. Dengan perahu tradisional atau yacht, Anda dapat berlayar ke berbagai destinasi, termasuk Pulau Komodo, Pulau Rinca, dan Pulau Padar.">
+          </div>
+        </div>
+      </div>
+
+      <div id="overlay" class="overlay" style="display:none;"></div>
+      <div id="cardContainer" class="kartu" style="display:none;">
+        <div class="w-100 text-end">
+          <button id="close" type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="image-storage">
+              <img src="" alt="Gambar Besar" class="large-image" id="largeImage">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card-content">
+              <h2 id="imageTitle"></h2>
+              <p id="imageDesc" class=""></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="image-storage">
+            <img src="asset/img/komodo.webp" alt="Kelimutu Crater" class="thumbnail" data-title="Komodo"
+              data-desc="Melihat hewan komodo di Labuan Bajo adalah pengalaman yang menakjubkan. Anda akan mengunjungi Pulau Komodo atau Pulau Rinca, di mana pemandu berpengalaman akan membawa Anda mendekati kadal terbesar di dunia ini. Selama trekking, Anda juga dapat menikmati pemandangan indah dan melihat satwa liar lainnya.">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="image-storage">
+            <img src="asset/img/desamelo.jpeg" alt="Gambar Lain" class="thumbnail" data-title="Desa melo"
+              data-desc="Desa Melo, terletak dekat Labuan Bajo, adalah desa tradisional yang kaya akan budaya dan tradisi lokal. Dikenal sebagai tempat yang menawarkan pengalaman autentik, Desa Melo memberikan kesempatan untuk menyaksikan kehidupan masyarakat Suku Manggarai yang ramah.">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="image-storage">
+            <img src="asset/img/islandhopping.jpeg" alt="Gambar Ketiga" class="thumbnail" data-title="Island Hopping"
+              data-desc="Island hopping di Labuan Bajo adalah petualangan luar biasa yang memungkinkan Anda menjelajahi keindahan pulau-pulau sekitar Taman Nasional Komodo. Dengan perahu sebagai sarana transportasi, Anda akan mengunjungi berbagai pulau yang masing-masing menawarkan pesona unik.">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="image-storage">
+            <img src="asset/img/mendaki.jpg" alt="Gambar Keempat" class="thumbnail" data-title="Pendakian"
+              data-desc="Trek pendakian di Labuan Bajo menawarkan pengalaman petualangan yang menakjubkan dengan pemandangan alam yang spektakuler. Salah satu trek paling populer adalah ke Pulau Padar, di mana pendaki dapat menikmati panorama menakjubkan dari puncak bukitnya.">
+          </div>
+        </div>
+      </div>
+
+      <div id="overlay" class="overlay" style="display:none;"></div>
+      <div id="cardContainer" class="kartu" style="display:none;">
+        <div class="w-100 text-end">
+          <button id="close" type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="image-storage">
+              <img src="" alt="Gambar Besar" class="large-image" id="largeImage">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card-content">
+              <h2 id="imageTitle"></h2>
+              <p id="imageDesc"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="review-section" id="review">
+    <div class="text-container">
+      <h2 style="text-align: center; border-bottom: 2px solid #cfdee9;">Review</h2>
+    </div>
+    <div class="container">
+      <div class="testimoni-container" id="testimoni">
+        <div id="carouselExampleFade" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="testimoni my-1">
+                    <img src="asset/img/pak alfi.jpg" alt="Charlie Low" class="photo" />
+                    <h3>Alfi Filsafalasafi</h3>
+                    <p class="role">Traveller</p>
+                    <p class="stars">★★★★★</p>
+                    <p class="comment">
+                      Saya menikmati wisata di labuan bajo karena ada trek pendakian yang sangat menantang dan kulinernya yang sangat enak.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testimoni my-1">
+                    <img src="asset/img/haruki.jpg" alt="Charlie Low" class="photo" />
+                    <h3>Haruki minami</h3>
+                    <p class="role">Traveller</p>
+                    <p class="stars">★★★★★</p>
+                    <p class="comment">
+                      Di labuan bajo saya bisa meilihat komodo yang berkeliaran di pulau dan desa melo yang bisa dibuat spotfoto yang bagus.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testimoni my-1">
+                    <img src="asset/img/aeron.jpg" alt="Charlie Low" class="photo" />
+                    <h3>Aeron Shiki</h3>
+                    <p class="role">Player Esport</p>
+                    <p class="stars">★★★★★</p>
+                    <p class="comment">
+                      Saat saya mengunjungi tempat ini saya terkejut karena pemandangan yang indah dan banyak tempat wisata yang bisa dinikmati. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="testimoni my-1">
+                    <img src="asset/img/barto.jpg" alt="Charlie Low" class="photo" />
+                    <h3>Barto sutaryono</h3>
+                    <p class="role">Dosen</p>
+                    <p class="stars">★★★★★</p>
+                    <p class="comment">
+                      Saya ingin menjadikan labuan bajo sebagai tempat untuk materi mengajar saya dikarenakan tempat yang sangat bagus.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testimoni my-1">
+                    <img src="asset/img/yuki.jpg" alt="Charlie Low" class="photo" />
+                    <h3>Yuki maura</h3>
+                    <p class="role">Artis</p>
+                    <p class="stars">★★★★★</p>
+                    <p class="comment">
+                      Saya suka labuan bajo karena disana ada tempat wisata snorkeling yang menjadi favorit saya.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testimoni my-1">
+                    <img src="asset/img/numi.jpg" alt="Charlie Low" class="photo" />
+                    <h3>Numi raisa</h3>
+                    <p class="role">Model</p>
+                    <p class="stars">★★★★★</p>
+                    <p class="comment">
+                      Tempat ini sangat bagus digunakan sebagai spotfoto dan saya telah melakukan foto model disana. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section" id="message">
+    <div class=" container-contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-form col-12 col-md-6">
+         <form>
+           <label for="name">Name *</label>
+           <input type="text" id="name" name="name" required>
+ 
+           <label for="email">Email *</label>
+           <input type="email" id="email" name="email" required>
+ 
+           <label for="message">Message</label>
+           <textarea id="message" name="message"></textarea>
+ 
+           <button type="submit">Send Message</button>
+         </form>
+       </div>
+ 
+       <div class="contact-info col-12 col-md-6">
+         <h2>Contact us</h2>
+         <p>Phone: +6282317658282</p>
+         <p>Email: <a href="#">info@labuanbajosuper.com</a></p>
+       </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2024 Situs ini mendeskripsikan tentang Labuan bajo</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
